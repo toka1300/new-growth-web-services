@@ -4,13 +4,11 @@ module.exports = {
     "phoneForTel": "613-857-9828",
     "phoneFormatted": "(613) 857-9828",
     "address": {
-        "lineOne": "123 Fake Street",
-        "lineTwo": "What is this line for?",
-        "city": "Ottawa",
-        "state": "ON",
-        "postalCode": "K0A1X0",
+        "lineOne": "Canada",
+        "city": "Ottawa,",
+        "province": "ON",
         "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
+        "mapLink": "https://maps.app.goo.gl/osHCPqm9ZzCPVJmT7"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",

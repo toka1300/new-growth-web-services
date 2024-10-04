@@ -18,8 +18,6 @@ media="print" onload="this.media='all'; this.onload=null;">
     <link rel="stylesheet" href="/assets/css/local.css">
 </noscript>
 
-<link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/>
-
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer>
@@ -50,16 +48,13 @@ media="print" onload="this.media='all'; this.onload=null;">
             {% if client.address %}
                 "address": {
                     "@type": "PostalAddress"{% if client.address.lineOne %},
-                        "streetAddress": "{{ client.address.lineOne }}{% if client.address.lineTwo %}, {{ client.address.lineTwo }}{% endif %}"
+                        "streetAddress": "{{ client.address.lineOne }}"
                     {% endif %}
                     {% if client.address.city %},
                         "addressLocality": "{{ client.address.city }}"
                     {% endif %}
-                    {% if client.address.state %},
-                        "addressRegion": "{{ client.address.state }}"
-                    {% endif %}
-                    {% if client.address.postalCode %},
-                        "postalCode": "{{ client.address.postalCode }}"
+                    {% if client.address.province %},
+                        "addressRegion": "{{ client.address.province }}"
                     {% endif %}
                     {% if client.address.country %},
                         "addressCountry": "{{ client.address.country }}"
@@ -79,41 +74,31 @@ media="print" onload="this.media='all'; this.onload=null;">
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
+<section id="hero-1426">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"> Save Our Earth, One Person at a Time</span>
+            <h1 class="cs-title">Let's Go Green As It Makes Environment</h1>
+            <p class="cs-text">
+                We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
+            </p>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid cs-button1">Join Community</a>
+                <a href="" class="cs-button-solid cs-button2">Donate Now</a>
             </div>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 720, height: 774 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-            <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2000, height: 2000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1500, height: 1475 }) | webp %}" alt="Produce collection">
-        </picture>
-
-    </section>
+    <picture class="cs-background"></picture>
+        <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 750, height: 1600 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2000, height: 2000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <img src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+    </picture>
+</section>
 
     <!-- ============================================ -->
     <!--                  Services                    -->

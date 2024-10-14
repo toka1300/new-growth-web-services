@@ -10,7 +10,7 @@
     :root {
         --primary: #4A8A71;
         --primaryLight: #58a285;
-        --secondary: #ffba43;
+        --secondary: #816D5E;
         --secondaryLight: #ffba43;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -71,6 +71,7 @@
         z-index: 1;
         position: relative;
         display: inline-block;
+        color: #fff;
         background-color: var(--primary);
         width: auto;
         padding: 0 calc(30 / 16 * 1rem);
@@ -81,7 +82,6 @@
         font-weight: bold;
 
         // Transition Properties
-        color: #000;
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
@@ -101,7 +101,7 @@
             content: "";
             opacity: 1;
             display: block;
-            background-color: #816D5E;
+            background-color: var(--secondary);
             height: 100%;
 
             //Transition properties

@@ -99,101 +99,196 @@ media="print" onload="this.media='all'; this.onload=null;">
     </picture>
 </section>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+<section id="services-943">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h2 class="cs-title">What We Provide To Our Customer</h2>
+            <p class="cs-text">
+                All the way from initial design through to launching and maintaining your website, we take care of it, so you can focus on your business.
+            </p>
         </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/paint.svg" alt="Paint palette" width="40" height="40">
                 </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                <h3 class="cs-h3">Custom Design</h3>
+                <p class="cs-item-text">
+                    All websites are custom-designed to give your brand an original look, which stands out from the pack.
+                </p>
+                <a href="" class="cs-link">Read More</a>
+                <picture class="cs-background">
+                    <source srcset="{% getUrl '/assets/images/design.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                    <source srcset="{% getUrl '/assets/images/design.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                    <img src="{% getUrl '/assets/images/design.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
                 </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/mail-fast.svg" alt="Paint palette" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Blazing Fast</h3>
+                <p class="cs-item-text">
+                    Hand-coded websites, without the use of templates or libraries, ensure that your website loads as fast as possible.
                 </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                <a href="" class="cs-link">Read More</a>
+                <picture class="cs-background">
+                    <source srcset="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                    <source srcset="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                    <img src="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/brand-google.svg" alt="hair cut" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Google Business Page Revamp</h3>
+                <p class="cs-item-text">
+                    A sleak and informative Google profile ensures you aren't missing out on online customers
                 </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
+                <a href="" class="cs-link">Read More</a>
+                <picture class="cs-background">
+                    <source srcset="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                    <source srcset="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                    <img src="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/chart-line.svg" alt="hair cut" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">SEO-Services</h3>
+                <p class="cs-item-text">
+                    Search Engine Optimization (SEO) ensures that your business appears first when people search for a service like yours
+                </p>
+                <a href="" class="cs-link">Read More</a>
+                <picture class="cs-background">
+                    <source srcset="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                    <source srcset="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                    <img src="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                </picture>
+            </li>
+        </ul>
+    </div>
+    <!--Waves Background-->
+    <picture class="cs-waves">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1125">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <picture class="cs-picture cs-picture-1">
+                <source srcset="{% getUrl '/assets/images/me-2.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                <source srcset="{% getUrl '/assets/images/me-2.jpg' | resize({ width: 1400, height: 1400 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                <img src="{% getUrl '/assets/images/me-2.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+            </picture>
+            <!--Circle Graphic-->
+            <picture class="cs-graphic">
+                <source srcset="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+                <source srcset="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 661, height: 681 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+                <img src="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Our Company</span>
+            <h2 class="cs-title">A Personal Touch </h2>
+            <p class="cs-text">
+                At New Growth Web Services, you will have a partner who truly wants you to succeed. We are a local, independent small business, who love seeing other businesses, like ours succeed.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">Call or text directly with the one making your website</li>
+                <li class="cs-li">Canadian company, located in Ottawa, Ontario</li>
+                <li class="cs-li">When possible, we meet in-person, frequent your business and share with our friends and family</li>
+                <li class="cs-li">We support local communities, through volunteering and 5% of profits donated to local charities</li>
+            </ul>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">More About Us</a>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-1384">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Pricing</span>
+            <h2 class="cs-title">Choose The Option that Fits Your Needs</h2>
+            <p class="cs-text">
+                
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-package">Consultation</span>
+                    <span class="cs-price">
+                        $0
+                    </span>
                 </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
+                <ul class="cs-ul">
+                    <li class="cs-li">Let's See How We Can Help</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Get in Touch</a>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-package">Outright</span>
+                    <span class="cs-price">
+                        $3,000
+                        <span class="cs-duration"> +Hosting</span>
+                    </span>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">Design and Development</li>
+                    <li class="cs-li">Hosting $25/month</li>
+                    <li class="cs-li">$75/page after 5</li>
+                    <li class="cs-li cs-disabled">Unlimited Edits</li>
+                    <li class="cs-li cs-disabled">24/7 Support</li>
+                    <li class="cs-li cs-disabled">Lifetime Updates</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Get in Touch</a>
+            </li>
+            <li class="cs-item cs-popular">
+                <div class="cs-flex">
+                    <span class="cs-package">Monthly</span>
+                    <span class="cs-price">
+                        $99
+                        <span class="cs-duration">/Month</span>
+                    </span>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">Design and Development</li>
+                    <li class="cs-li">Hosting Included</li>
+                    <li class="cs-li">$75/page after 5</li>
+                    <li class="cs-li">Unlimited Edits</li>
+                    <li class="cs-li">24/7 Support</li>
+                    <li class="cs-li">Lifetime Updates</li>
+                </ul>
+                <a href="" class="cs-button-transparent">Get in Touch</a>
+            </li>
+        </ul>
+    </div>
+</section>
 
     <!-- ============================================ -->
     <!--            Extra Content To Rank             -->

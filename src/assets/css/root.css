@@ -5,10 +5,10 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
+    --primary: #4A8A71;
+    --primaryLight: #58a285;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -20,35 +20,43 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  *, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+  }
   .cs-topper {
-    display: block;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--primary);
-    text-align: inherit;
+    margin-bottom: 0.25rem;
+    display: block;
   }
   .cs-title {
-    position: relative;
-    margin: 0 0 1rem 0;
-    max-width: 43.75rem;
     font-size: var(--headerFontSize);
-    line-height: 1.2em;
     font-weight: 900;
-    color: var(--headerColor);
+    line-height: 1.2em;
     text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
   }
   .cs-text {
-    margin: 0;
-    max-width: 40.625rem;
-    width: 100%;
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
-    color: var(--bodyTextColor);
     text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
   .cs-button-solid {
     z-index: 1;
@@ -81,7 +89,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background-color: #000;
+    background-color: #816D5E;
     height: 100%;
     width: 0;
     transition: width 0.3s;
@@ -1236,7 +1244,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #footer {
-    background: #061623;
+    background: #0b1610;
   }
 }
 

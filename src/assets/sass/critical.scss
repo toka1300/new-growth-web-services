@@ -1,5 +1,3 @@
-/* STYLES FOR ABOVE THE FOLD */
-
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
@@ -7,6 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #hero-1426 {
+        /* Centers button */
         text-align: center;
         /* 200px - 300px - leaving extra space for the navigation */
         padding: clamp(12.5rem, 25.95vw, 18.75em) calc(16 / 16 * 1rem);
@@ -56,7 +55,7 @@
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: calc(48 / 16 * 1rem);
         }
@@ -64,6 +63,7 @@
         .cs-content {
             width: 100%;
             max-width: calc(630 / 16 * 1rem);
+            text-align: left;
         }
 
         .cs-topper {
@@ -72,10 +72,9 @@
             line-height: 1.2em;
             font-weight: 700;
             letter-spacing: 0.1em;
-            text-align: center;
             text-transform: uppercase;
             margin-bottom: calc(16 / 16 * 1rem);
-            color: var(--secondary);
+            color: var(--primaryLight);
             display: inline-block;
             position: relative;
         }
@@ -85,7 +84,6 @@
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 700;
             line-height: 1.2em;
-            text-align: center;
             max-width: calc(829 / 16 * 1rem);
             color: #fff;
             position: relative;
@@ -95,18 +93,16 @@
             /* 16px - 20px */
             font-size: clamp(1rem, 1.95vw, 1.25rem);
             line-height: 1.5em;
-            text-align: center;
             width: 100%;
             /* 464px - 622px */
             max-width: clamp(29rem, 60vw, 38.785rem);
-            margin: 0 auto 0;
             margin-bottom: calc(32 / 16 * 1rem);
             color: #fff;
         }
 
         .cs-button-group {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             gap: calc(8 / 16 * 1rem);
         }
@@ -135,12 +131,12 @@
                 position: absolute;
                 height: 100%;
                 width: 0%;
-                background: #000;
+                background: #816D5E;
                 opacity: 1;
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
+                // border-radius: calc(4 / 16 * 1rem);
                 transition: width 0.3s;
             }
 
@@ -154,6 +150,12 @@
         .cs-button1 {
             background-color: var(--secondary);
         }
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #hero-1426 {
+        padding-left: calc(48 / 16 * 1rem);
     }
 }
 

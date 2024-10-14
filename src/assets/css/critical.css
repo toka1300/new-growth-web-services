@@ -1,10 +1,10 @@
-/* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-1426 {
+    /* Centers button */
     text-align: center;
     /* 200px - 300px - leaving extra space for the navigation */
     padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
@@ -51,13 +51,14 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 3rem;
   }
   #hero-1426 .cs-content {
     width: 100%;
     max-width: 39.375rem;
+    text-align: left;
   }
   #hero-1426 .cs-topper {
     /* 13px - 16px */
@@ -65,10 +66,9 @@
     line-height: 1.2em;
     font-weight: 700;
     letter-spacing: 0.1em;
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: var(--secondary);
+    color: var(--primaryLight);
     display: inline-block;
     position: relative;
   }
@@ -77,7 +77,6 @@
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
     line-height: 1.2em;
-    text-align: center;
     max-width: 51.8125rem;
     color: #fff;
     position: relative;
@@ -86,17 +85,15 @@
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
-    text-align: center;
     width: 100%;
     /* 464px - 622px */
     max-width: clamp(29rem, 60vw, 38.785rem);
-    margin: 0 auto 0;
     margin-bottom: 2rem;
     color: #fff;
   }
   #hero-1426 .cs-button-group {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
@@ -124,12 +121,11 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: #816D5E;
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
     transition: width 0.3s;
   }
   #hero-1426 .cs-button-solid:hover:before {
@@ -137,6 +133,11 @@
   }
   #hero-1426 .cs-button1 {
     background-color: var(--secondary);
+  }
+}
+@media only screen and (min-width: 601px) {
+  #hero-1426 {
+    padding-left: 3rem;
   }
 }
 /*-- -------------------------- -->

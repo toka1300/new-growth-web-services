@@ -73,35 +73,11 @@
     left: -0.9375rem;
   }
   #sbs-1125 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
     min-width: 12.5rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
   }
   #sbs-1125 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
     opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.5rem;
     transition: width 0.3s;
   }
   #sbs-1125 .cs-button-solid:hover:before {
@@ -135,7 +111,7 @@
     top: 0;
     left: 0;
   }
-  #sbs-1125 .cs-graphic {
+  #sbs-1125 .cs-graphic img {
     width: 40.0625em;
     height: auto;
     position: absolute;

@@ -66,11 +66,12 @@
         color: var(--bodyTextColor);
     }
 
-    // Button - can be replaced using CodeStitch's "Button" Stitches
+    // Main button definition
     .cs-button-solid {
         z-index: 1;
         position: relative;
         display: inline-block;
+        overflow: hidden;
         color: #fff;
         background-color: var(--primary);
         width: auto;
@@ -80,6 +81,7 @@
         font-size: calc(16 / 16 * 1rem);
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
+        border-radius: calc(8 / 16 * 1rem);
 
         // Transition Properties
         transition: color 0.3s;
@@ -971,6 +973,10 @@
                     width: 100%;
                 }
             }
+        }
+
+        .cs-nav-button {
+            border-radius: 0;
         }
     }
 }

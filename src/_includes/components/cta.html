@@ -1,23 +1,23 @@
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--                     CTA                      -->
 <!-- ============================================ -->
 
-<section id="cta">
-    <div class="container">
-        <h2 class="title">
-            Get It Done
-            <br/>
-            With Us Today
-        </h2>
-        <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
-        </p>
-        <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
+<section id="cta-1071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Say Hi</span>
+                <h2 class="cs-title">Let's Chat About How We Can Achieve New Growth for Your Business Online.</h2>
+            </div>
+            <div class="cs-button-box">
+                <a href="" class="cs-button-solid">Contact Us</a>
+            </div>
+        </div>
     </div>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+    <picture class="cs-background">
+        <source srcset="{% getUrl '/assets/images/rainforest.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/rainforest.jpg' | resize({ width: 2500, height: 1667 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <img src="{% getUrl '/assets/images/rainforest.jpg' | resize({ width: 2500, height: 1667 }) | webp %}" alt="Pen and paper designing website">
     </picture>
-
 </section>
+                                

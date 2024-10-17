@@ -213,19 +213,23 @@ media="print" onload="this.media='all'; this.onload=null;">
             </p>
             <div class="service-group">
                 <div class="service-item">
-                    <img src="./assets/svgs/phone.svg" alt="pin icon">
+                    <img src="./assets/svgs/phone-dark.svg" alt="pin icon" class="icon-light-mode">
+                    <img src="./assets/svgs/phone-white.svg" alt="pin icon" class="icon-dark-mode">
                     <span><strong>Direct Communication: </strong>Call or text directly with the the person building your website.</span>
                 </div>
                 <div class="service-item">
-                    <img src="./assets/svgs/pin.svg" alt="pin icon">
+                    <img src="./assets/svgs/pin-dark.svg" alt="pin icon" class="icon-light-mode">
+                    <img src="./assets/svgs/pin-white.svg" alt="pin icon" class="icon-dark-mode">
                     <span><strong>Canadian-based: </strong>Located in Ottawa, Ontario and supporting businesses across Canada.</span>
                 </div>
                 <div class="service-item">
-                    <img src="./assets/svgs/hand.svg" alt="pin icon">
+                    <img src="./assets/svgs/smile-dark.svg" alt="smile icon" class="icon-light-mode">
+                    <img src="./assets/svgs/smile-white.svg" alt="smile icon" class="icon-dark-mode">
                     <span><strong>Connection: </strong>We love to meet in-person, visit your business and recommend our friends and family do the same!</span>
                 </div>
                 <div class="service-item">
-                    <img src="./assets/svgs/love.svg" alt="pin icon">
+                    <img src="./assets/svgs/heart-dark.svg" alt="heart icon" class="icon-light-mode">
+                    <img src="./assets/svgs/heart-white.svg" alt="heart icon" class="icon-dark-mode">
                     <span><strong>Community Support: </strong>We give back by volunteering and donating 5% of profits to local charities</span>
                 </div>
             </div>
@@ -233,75 +237,12 @@ media="print" onload="this.media='all'; this.onload=null;">
         </div>
     </div>
 </section>
-                                
 
 <!-- ============================================ -->
 <!--                  Pricing                     -->
 <!-- ============================================ -->
 
-<section id="pricing-1384">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Pricing</span>
-            <h2 class="cs-title">Choose The Option that Fits Your Needs</h2>
-            <p class="cs-text">
-                
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <div class="cs-flex">
-                    <span class="cs-package">Consultation</span>
-                    <span class="cs-price">
-                        $0
-                    </span>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">Initial Consultation</li>
-                    <li class="cs-li">Website Assessment</li>
-                    <li class="cs-li">Actionable Recommendations</li>
-                </ul>
-                <a href="/contact" class="cs-button-transparent">Get in Touch</a>
-            </li>
-            <li class="cs-item">
-                <div class="cs-flex">
-                    <span class="cs-package">Outright</span>
-                    <span class="cs-price">
-                        $3,000
-                        <span class="cs-duration"> +Hosting</span>
-                    </span>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">Design and Development</li>
-                    <li class="cs-li">Hosting $25/month</li>
-                    <li class="cs-li">$75/page after 5</li>
-                    <li class="cs-li cs-disabled">Unlimited Edits</li>
-                    <li class="cs-li cs-disabled">24/7 Support</li>
-                    <li class="cs-li cs-disabled">Lifetime Updates</li>
-                </ul>
-                <a href="/contact" class="cs-button-transparent">Get in Touch</a>
-            </li>
-            <li class="cs-item cs-popular">
-                <div class="cs-flex">
-                    <span class="cs-package">Monthly</span>
-                    <span class="cs-price">
-                        $99
-                        <span class="cs-duration">/Month</span>
-                    </span>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">Design and Development</li>
-                    <li class="cs-li">Hosting Included</li>
-                    <li class="cs-li">$75/page after 5</li>
-                    <li class="cs-li">Unlimited Edits</li>
-                    <li class="cs-li">24/7 Support</li>
-                    <li class="cs-li">Lifetime Updates</li>
-                </ul>
-                <a href="/contact" class="cs-button-transparent">Get in Touch</a>
-            </li>
-        </ul>
-    </div>
-</section>
+{% include 'components/pricing.html' %}                                ß
 
 <!-- ============================================ -->
 <!--                   Portfolio                   -->

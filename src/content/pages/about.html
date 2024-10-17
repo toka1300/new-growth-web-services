@@ -15,61 +15,45 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+<section id="int-hero">
+    <h1 id="home-h">About Me</h1>
+    <picture class="cs-background">
+        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 1200, height: 400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 2000, height: 1005 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <img src="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1278">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1000, height: 1000 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+            <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1500, height: 1200 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+            <img src="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
         </picture>
-
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">New Growth Web Services</span>
+                <h2 class="cs-title">Hey There, I'm Casey. <img src="../../assets/svgs/hand-wave.svg" class="emoji" alt="Hand waving"> </h2>
+                <p>I grew up in Pembroke, Ontario and studied business in university. After ten years in this field, I made the switch to web development three years ago, studying at Le Wagon in Montreal. Since then, I've worked at an agency, creating everything from sleek, simple websites like the one you're on now to more complex, advanced projects.</p>
+                <br>
+                <p>But I don't fit the typical developer mold. When I'm not coding, you'll find me cooking, cycling, hiking, or escaping into nature as often as I can (as you might have guessed from the theme of this site!). </p>
+                <br>
+                <p>I am excited to chat and see how I can help you grow your business with a new website</p>
+                <a href="/contact" class="cs-button-solid">Contact Us</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 

@@ -37,7 +37,7 @@ eleventyNavigation:
         <picture class="cs-picture">
             <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1000, height: 1000 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1500, height: 1200 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Photo of Casey at volcano">
+            <img src="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Photo of Casey at volcano">
         </picture>
         <div class="cs-content">
             <div class="cs-flex">
@@ -76,7 +76,7 @@ eleventyNavigation:
         <picture class="cs-picture">
             <source srcset="{% getUrl '/assets/images/pagespeed-m.png' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/pagespeed.png' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/pagespeed.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Screenshot of page speed results">
+            <img src="{% getUrl '/assets/images/pagespeed.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Screenshot of page speed results">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Faster Load Times</span>
@@ -107,7 +107,7 @@ eleventyNavigation:
         <picture class="cs-picture">
             <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Single tree on water with its reflection">
+            <img src="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Single tree on water with its reflection">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Security</span>
@@ -135,7 +135,7 @@ eleventyNavigation:
         <picture class="cs-picture">
             <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/compass.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Hand holding a compass">
+            <img src="{% getUrl '/assets/images/compass.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Hand holding a compass">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Google Profile</span>

@@ -3,8 +3,8 @@ title: 'Contact | Code Stitch Web Designs'
 description: 'Meta description for the page'
 permalink: 'contact/'
 eleventyNavigation:
-    key: Let's Chat
-    order: 600
+    key: Contact
+    order: 1100
     hideOnDesktop: true
 ---
 
@@ -24,9 +24,9 @@ eleventyNavigation:
 <section id="int-hero">
     <h1 id="home-h">Let's Chat</h1>
     <picture class="cs-background">
-        <source srcset="{% getUrl '/assets/images/sapling-contact-2.png' | resize({ width: 1200, height: 400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/sapling-contact-2.png' | resize({ width: 2500, height: 1000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/sapling-contact-2.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+        <source srcset="{% getUrl '/assets/images/sapling-contact.png' | resize({ width: 1200, height: 400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/sapling-contact.png' | resize({ width: 2500, height: 1000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <img src="{% getUrl '/assets/images/sapling-contact  s.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Hand holding a sapling">
     </picture>
 </section>
 <!-- ============================================ -->
@@ -61,7 +61,7 @@ eleventyNavigation:
         <ul class="cs-ul">
             <li class="cs-li">
                 <picture class="cs-icon-wrapper">
-                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-phone.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                    <img aria-hidden="true" src="../../assets/svgs/phone-contact.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Phone</span>
@@ -72,7 +72,7 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <picture class="cs-icon-wrapper">
-                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-email.svg" alt="mail icon" class="cs-icon" width="40" height="40" decoding="async">
+                    <img aria-hidden="true" src="../../assets/svgs/mail.svg" alt="mail icon" class="cs-icon" width="40" height="40" decoding="async">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Email</span>
@@ -81,7 +81,7 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <picture class="cs-icon-wrapper">
-                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-pin.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    <img aria-hidden="true" src="../../assets/svgs/pin-contact.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Areas Served</span>

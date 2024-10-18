@@ -74,7 +74,7 @@ eleventyNavigation:
     <picture class="cs-background">
         <source srcset="{% getUrl '/assets/images/landing-m.jpg' | resize({ width: 1200, height: 1400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
         <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2500, height: 1660 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/landing-m.jpg' | resize({ width: 1200, height: 1400 }) | webp %}" alt="Forest">
+        <img src="{% getUrl '/assets/images/landing-m.jpg' | resize({ width: 1200, height: 1400 }) | webp %}" alt="Aerial view of forest">
     </picture>
 </section>
 
@@ -164,9 +164,9 @@ eleventyNavigation:
         </ul>
     </div>
     <picture class="cs-waves">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="./assets/svgs/waves-m.svg">
+        <source media="(min-width: 601px)" srcset="./assets/svgs/waves.svg">
+        <img loading="lazy" decoding="async" src="./assets/svgs/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
     </picture>
 </section>
 
@@ -179,11 +179,11 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture-1">
                 <source srcset="{% getUrl '/assets/images/me.jpg' | resize({ width: 1400, height: 1400 }) | avif %}" type="image/avif">
-                <img src="{% getUrl '/assets/images/me.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                <img src="{% getUrl '/assets/images/me.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Picture of casey, the owner/lead developer of New Growth">
             </picture>
             <picture class="cs-graphic">
                 <source srcset="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 661, height: 681 }) | avif %}" type="image/avif">
-                <img src="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                <img src="{% getUrl '/assets/images/nature-drawing-4.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Colorful graphic with plants">
             </picture>
         </div>
         <div class="cs-content">
@@ -194,8 +194,8 @@ eleventyNavigation:
             </p>
             <div class="service-group">
                 <div class="service-item">
-                    <img src="./assets/svgs/phone-dark.svg" alt="pin icon" class="icon-light-mode">
-                    <img src="./assets/svgs/phone-white.svg" alt="pin icon" class="icon-dark-mode">
+                    <img src="./assets/svgs/phone-dark.svg" alt="phone icon" class="icon-light-mode">
+                    <img src="./assets/svgs/phone-white.svg" alt="phone icon" class="icon-dark-mode">
                     <span><strong>Direct Communication: </strong>Call or text directly with the the person building your website.</span>
                 </div>
                 <div class="service-item">
@@ -244,7 +244,7 @@ eleventyNavigation:
                     <picture class="cs-picture">
                         <source srcset="{% getUrl '/assets/images/organic-website.png' | resize({ width: 1000, height: 571 }) | avif %}" media="(max-width: 600px)" type="image/avif">
                         <source srcset="{% getUrl '/assets/images/organic-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                        <img src="{% getUrl '/assets/images/organic-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                        <img src="{% getUrl '/assets/images/organic-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Screenshot of organic website">
                     </picture>
                     <h3 class="cs-h3">Organic Store</h3>
                     <p class="cs-item-text">
@@ -257,7 +257,7 @@ eleventyNavigation:
                     <picture class="cs-picture">
                         <source srcset="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(max-width: 600px)" type="image/avif">
                         <source srcset="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                        <img src="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                        <img src="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Screenshot of cabinet website">
                     </picture>
 
                     <h3 class="cs-h3">Fitzroy Cabinet Maker</h3>
@@ -270,7 +270,7 @@ eleventyNavigation:
                 <a href="https://airpnp139.herokuapp.com/" class="cs-link"  target="_blank">
                     <picture class="cs-picture">
                         <source srcset="{% getUrl '/assets/images/airpnp-website.png' | resize({ width: 820, height: 472 }) | avif %}" type="image/avif">
-                        <img src="{% getUrl '/assets/images/airpnp-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Pen and paper designing website">
+                        <img src="{% getUrl '/assets/images/airpnp-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Screenshot of airpnp website">
                     </picture>
                     <h3 class="cs-h3">airpnp</h3>
                     <p class="cs-item-text">

@@ -11,6 +11,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 1200, height: 400 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -22,7 +23,7 @@ eleventyNavigation:
     <h1 id="home-h">About</h1>
     <picture class="cs-background">
         <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 1200, height: 400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 1585, height: 455 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 2000, height: 600 }) | avif %}" media="(min-width: 601px)" type="image/avif">
         <img src="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
     </picture>
 </section>
@@ -52,7 +53,104 @@ eleventyNavigation:
         </div>
     </div>
 </section>
-                                
+
+<!-- ============================================ -->
+<!--               Heading Section                -->
+<!-- ============================================ -->
+
+<section id="header-1">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">The Approach</span>
+            <h2 class="cs-title">Why it All Matters</h2>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl '/assets/images/lighthouse-m.png' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+            <source srcset="{% getUrl '/assets/images/lightspeed-5.png' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+            <img src="{% getUrl '/assets/images/lightspeed-5.png' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Faster Load Times</span>
+            <h2 class="cs-title">Why Speed Matters</h2>
+            <p class="cs-text">
+                A few seconds may not seem like much, but in the online world it can make a significant difference. In fact, 32% of people abandon a website if it takes longer than three seconds to load<a href="https://www.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf" target="_blank" class="ref-link"><sup href="google.com">1</sup></a>.
+                Beyond customers leaving your site, potential clients may never discover it in the first place. One of the key factors that influence how Google ranks your site is its speed.
+            </p>
+            <p>
+                While numerous tools, libraries, and website builders (such as WordPress or Wix) aim to simplify web development, they often come at a cost. Although they may ease the developer's workload, they can introduce bloat that severely impacts the speed of your website.
+            </p>
+            <br>
+            <p>
+                If I'm losing you, how about a food analogy? If you wanted the healthiest bread possible you would likely make it from scratch, avoiding additives and giving careful attention to each step.
+                It turns out websites aren't so different! With no website builders or libraries you get the leanest, fastest and most efficient site possible.
+            </p>
+            <a class="cs-button-solid" aria-label="Get in touch to learn more" href="">Let's Chat</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+            <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+            <img src="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Security</span>
+            <h2 class="cs-title">Less is More</h2>
+            <p class="cs-text">
+                <p>
+                    A hand-coded website using pure HTML and CSS is inherently more secure than platforms like WordPress. HTML and CSS are static, meaning they don't rely on plugins, databases, or complex server-side code, which eliminates many common vulnerabilities. Since there's nothing to hack—no login pages, plugins, or databases—your site has far fewer entry points for attackers.
+                </p>
+                <br>
+                <p>
+                    On the other hand, WordPress sites often require plugins for additional functionality. These plugins can introduce security risks, especially if they are outdated or poorly maintained, making WordPress sites more vulnerable to hacking. With a simple HTML/CSS site, you avoid these risks, giving you a safer, faster website with less maintenance.
+                </p>
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+            <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+            <img src="{% getUrl '/assets/images/compass.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Google Profile</span>
+            <h2 class="cs-title">Improve Your Google Business Profile</h2>
+            <p>
+                A Google Business Profile is often overlooked by small businesses, but it’s a crucial tool for being discovered online. When someone searches for your business or services related to what you offer, having a well-optimized profile ensures that your company shows up in local search results and Google Maps. This makes it easy for potential customers to find your contact information, read reviews, and get directions, giving you more visibility to people searching for services like yours. <br> <br>
+            </p>
+            <p>
+                Beyond visibility, a complete and up-to-date Google Business Profile boosts credibility. Positive reviews and accurate business details build trust with potential customers, and since many people rely on Google to find businesses nearby, neglecting this tool could mean missing out on valuable local leads. At New Growth Web Services, we offer a free Google Business Profile revamp to help you make the most of this resource, ensuring your business stands out and is easy to find.
+            </p>
+        </p>
+            <a class="cs-button-solid" aria-label="Get in touch to learn more" href="">Let's Chat</a>
+        </div>
+    </div>
+</section>
 
     {% include 'components/cta.html' %}
 

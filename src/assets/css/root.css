@@ -962,7 +962,7 @@
     list-style: none;
     width: 100%;
     margin: 0;
-    padding: 0 2.5rem 2.5rem;
+    padding: 0 1rem 1.5rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     background-color: #fff;

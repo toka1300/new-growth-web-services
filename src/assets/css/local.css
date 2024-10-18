@@ -420,7 +420,7 @@
     transition: box-shadow 0.3s, transform 0.3s;
   }
   #services-341 .cs-item:hover {
-    box-shadow: var(--primary) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transform: translateY(-0.4375rem);
   }
   #services-341 .cs-item:hover .cs-picture img {
@@ -510,6 +510,9 @@
   }
   body.dark-mode #services-341 .cs-item:before {
     opacity: 0.3;
+  }
+  body.dark-mode #services-341 .cs-item:hover {
+    box-shadow: var(--primary) 0px 8px 24px;
   }
 }
 

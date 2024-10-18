@@ -512,7 +512,7 @@
                 transform 0.3s;
 
             &:hover {
-                box-shadow: var(--primary) 0px 8px 24px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 transform: translateY(calc(-7 / 16 * 1rem));
                 .cs-picture {
                     img {
@@ -624,6 +624,9 @@
             .cs-item {
                 &:before {
                     opacity: 0.3;
+                }
+                &:hover {
+                box-shadow: var(--primary) 0px 8px 24px;
                 }
             }
         }

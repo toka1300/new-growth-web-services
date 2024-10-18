@@ -1067,7 +1067,7 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 74rem) {
     #int-hero {
         background-attachment: fixed;
         min-height: calc(300 / 16 * 1rem);
@@ -1383,7 +1383,6 @@
 
                 &.cs-popular {
                     border: solid var(--primaryLight);
-                    
                     .cs-button-transparent {
                         background-color: var(--primary);
                         color: #fff;

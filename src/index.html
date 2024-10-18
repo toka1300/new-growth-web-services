@@ -81,20 +81,20 @@ media="print" onload="this.media='all'; this.onload=null;">
 <section id="hero-1426">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Grow your online business</span>
-            <h1 class="cs-title">Web Design and Development</h1>
+            <span class="cs-topper">Grow your business online</span>
+            <h1 class="cs-title">Custom Web Design and Development</h1>
             <p class="cs-text">
-                We help small to medium-sized companies find new growth in their business, through online presense
+                Helping small and medium-sized businesses find new growth by creating a strong online presence.
             </p>
             <div class="cs-button-group">
-                <a href="/contact" class="cs-button-solid">Contact Us</a>
+                <a href="/contact" class="cs-button-solid">Let's Chat</a>
             </div>
         </div>
     </div>
 
     <picture class="cs-background">
-        <source srcset="{% getUrl '/assets/images/landing-m-3.jpg' | resize({ width: 1200, height: 1400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/landing-2000.jpg' | resize({ width: 2500, height: 1660 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/landing-3.jpg' | resize({ width: 1200, height: 1400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2500, height: 1660 }) | avif %}" media="(min-width: 601px)" type="image/avif">
         <img src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" alt="Produce collection">
     </picture>
 </section>
@@ -118,10 +118,12 @@ media="print" onload="this.media='all'; this.onload=null;">
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/paint.svg" alt="Paint palette" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">Custom Design</h3>
-                <p class="cs-item-text">
-                    Every websites are custom-designed to give your brand an original look, which stands out from the pack.
-                </p>
+                <div class="text">
+                    <h3 class="cs-h3">Custom Design</h3>
+                    <p class="cs-item-text">
+                        Every websites are custom-designed to give your brand an original look, which stands out from the pack.
+                    </p>
+                </div>
                 <a href="" class="cs-link">Read More</a>
                 <picture class="cs-background">
                     <source srcset="{% getUrl '/assets/images/design.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
@@ -133,10 +135,12 @@ media="print" onload="this.media='all'; this.onload=null;">
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/mail-fast.svg" alt="Paint palette" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">Blazingly Fast</h3>
-                <p class="cs-item-text">
-                    Hand-coded websites, built without relying on templates or heavy libraries, deliver optimal speed and performance, driving more traffic to your business.
-                </p>
+                <div class="text">
+                    <h3 class="cs-h3">Blazingly Fast</h3>
+                    <p class="cs-item-text">
+                        Hand-coded websites, built without relying on templates or heavy libraries, deliver optimal speed and performance, driving more traffic to your business.
+                    </p>
+                </div>
                 <a href="" class="cs-link">Read More</a>
                 <picture class="cs-background">
                     <source srcset="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
@@ -148,10 +152,12 @@ media="print" onload="this.media='all'; this.onload=null;">
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/brand-google.svg" alt="hair cut" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">Google Business Page Revamp</h3>
-                <p class="cs-item-text">
-                    A sleak and informative Google profile is often overlooked, yet it serves as the first impression for many potential customers.
-                </p>
+                <div class="text">
+                    <h3 class="cs-h3">Google Business Page Revamp</h3>
+                    <p class="cs-item-text">
+                        A sleak and informative Google profile is often overlooked, yet it serves as the first impression for many potential customers.
+                    </p>
+                </div>
                 <a href="" class="cs-link">Read More</a>
                 <picture class="cs-background">
                     <source srcset="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
@@ -163,10 +169,12 @@ media="print" onload="this.media='all'; this.onload=null;">
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="./assets/svgs/chart-line.svg" alt="hair cut" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">SEO-Services</h3>
-                <p class="cs-item-text">
-                    Search Engine Optimization (SEO) helps your business stand out when people search for services like yours, driving more visibility and customers.
-                </p>
+                <div class="text">
+                    <h3 class="cs-h3">SEO-Services</h3>
+                    <p class="cs-item-text">
+                        Search Engine Optimization (SEO) helps your business stand out when people search for services like yours, driving more visibility and customers.
+                    </p>
+                </div>
                 <a href="" class="cs-link">Read More</a>
                 <picture class="cs-background">
                     <source srcset="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">

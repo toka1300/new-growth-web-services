@@ -1,9 +1,6 @@
-<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Standard meta tags -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +8,8 @@
         <meta name="keywords" content="">
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
-        <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}"/>
+        <meta property="og:title" content="New Growth Web Services - Custom Website Design for Small Businesses"/>
+        <meta property="og:description" content="We build fast, accessible, and mobile-first websites tailored to the unique needs of small businesses, helping you grow online with simplicity and style."/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
         <meta property="og:image" content="/assets/images/logo-small.png"/>
@@ -26,15 +22,12 @@
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
         <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
-        <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
 
-        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
         {% if preloadImg != '' %}
             <link rel="preload" as="image" href="{{ preloadImg }}"/>
         {% endif %}
 
-        <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
         <link rel="stylesheet" href="/assets/css/dark.css">
         <script defer src="/assets/js/dark.js"></script>
@@ -45,7 +38,6 @@
         <title>{{ title }}</title>
     </head>
     <body>
-        <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
 
         {% include "components/header.html" %}

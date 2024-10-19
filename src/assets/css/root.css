@@ -1,8 +1,6 @@
-/* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-/* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
     --primary: #4A8A71;
@@ -12,12 +10,9 @@
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
   body {
@@ -25,7 +20,6 @@
     padding: 0;
   }
   *, *:before, *:after {
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
   }
   .cs-topper {
@@ -264,10 +258,8 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem 1rem;
-    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
@@ -286,16 +278,13 @@
     height: 100%;
     max-width: 9.125rem;
     width: 40%;
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
   }
   #cs-navigation .cs-logo img {
     height: 100%;
     width: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
-    /* places the image to the left edge of the parent */
     object-position: left;
   }
   #cs-navigation .cs-toggle {
@@ -307,7 +296,6 @@
     margin: 0 0 0 auto;
     background-color: transparent;
     height: clamp(2.75rem, 6vw, 3rem);
-    /* 44px - 48px */
     width: clamp(2.75rem, 6vw, 3rem);
   }
   #cs-navigation .cs-active .cs-line1 {
@@ -325,9 +313,7 @@
   }
   #cs-navigation .cs-box {
     position: relative;
-    /* 14px - 16px */
     height: clamp(0.875rem, 1.5vw, 1rem);
-    /* 24px - 28px */
     width: clamp(1.5rem, 2vw, 1.75rem);
   }
   #cs-navigation .cs-line {
@@ -387,13 +373,11 @@
     min-width: 40%;
     width: auto;
     overflow: scroll;
-    /* 28px - 40px */
     padding: 3rem clamp(1.75rem, 3vw, 2.5rem) 2rem 4.375rem;
     gap: 1.25rem;
   }
   #cs-navigation .cs-li {
     opacity: 0;
-    /* transition from these values */
     transform: translateX(-2.5rem);
     margin-right: 0;
     width: 100%;
@@ -433,7 +417,6 @@
     display: inline-block;
     margin: 0;
     text-decoration: none;
-    /* 16px - 24px */
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     line-height: 1.2em;
     color: var(--headerColor);
@@ -442,7 +425,6 @@
     position: absolute;
     bottom: -0.125rem;
     left: 0;
-    /* active state underline */
     content: "";
     opacity: 1;
     display: none;
@@ -461,7 +443,6 @@
     position: absolute;
     top: 100%;
     right: 0;
-    /* black blurred overlay */
     content: "";
     opacity: 0;
     display: block;
@@ -493,7 +474,6 @@
     background-color: var(--dark);
   }
   body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
     filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-line {
@@ -570,7 +550,6 @@
     text-align: inherit;
   }
   #cs-navigation .cs-li-link.cs-drop-link {
-    /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
     color: #fff;
   }
@@ -607,7 +586,6 @@
   }
   #cs-navigation .cs-drop-ul {
     z-index: -100;
-    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
     position: absolute;
     top: 100%;
     visibility: hidden;
@@ -677,7 +655,6 @@
   #cs-navigation .cs-li-link.cs-drop-link {
     display: block;
     width: 100%;
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem;
     white-space: nowrap;
@@ -707,7 +684,6 @@
     background-color: var(--medium);
   }
   body.dark-mode #cs-navigation .cs-drop-icon {
-    /* turns it white */
     filter: grayscale(1) brightness(1000%);
   }
 }
@@ -721,10 +697,8 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
-    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
@@ -745,7 +719,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     height: 4.0625rem;
     max-width: 21.875rem;
@@ -755,7 +728,6 @@
   #cs-navigation .cs-logo img {
     height: 100%;
     width: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
   #cs-navigation .cs-ul {
@@ -765,13 +737,11 @@
     margin: 0;
     width: 100%;
     padding: 0;
-    /* 20px - 36px */
     gap: clamp(1.25rem, 2.6vw, 2.25rem);
   }
   #cs-navigation .cs-li {
     padding: 2rem 0;
     list-style: none;
-    /* prevent flexbox from squishing it */
     flex: none;
   }
   #cs-navigation .cs-li-link {
@@ -779,7 +749,6 @@
     display: block;
     margin: 0;
     text-decoration: none;
-    /* 14px - 16px */
     font-size: clamp(0.875rem, 1vw, 1rem);
     line-height: 1.5em;
     color: var(--bodyTextColor);
@@ -791,7 +760,6 @@
     position: absolute;
     bottom: 0rem;
     left: 0;
-    /* active state underline */
     content: "";
     opacity: 1;
     display: block;
@@ -813,7 +781,6 @@
     background-color: var(--dark);
   }
   body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
     filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #cs-navigation .cs-li-link {
@@ -914,7 +881,6 @@
 @media only screen and (min-width: 0rem) {
   #pricing-1384 {
     padding: var(--sectionPadding);
-    /* clips the cs-floater and prevents it from causing overflow issues */
     overflow: hidden;
     background-color: #f7f7f7;
     position: relative;
@@ -922,7 +888,6 @@
   }
   #pricing-1384 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
     max-width: 36.5rem;
     margin: auto;
     display: flex;

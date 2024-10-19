@@ -10,10 +10,10 @@ module.exports = {
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/osHCPqm9ZzCPVJmT7"
     },
-    "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
-    },
+    // "socials": {
+    //     "facebook": "https://www.facebook.com/",
+    //     "instagram": "https://www.instagram.com/",
+    // },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://www.newgrowthweb.ca"
 };

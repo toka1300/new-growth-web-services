@@ -1,12 +1,8 @@
-/* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
-
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 
-/* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
-    // Website colors
     :root {
         --primary: #4A8A71;
         --primaryLight: #58a285;
@@ -15,12 +11,9 @@
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
-        /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-        /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1rem;
-        /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     }
     
@@ -30,7 +23,6 @@
     }
     
     *, *:before, *:after {
-        /* prevents padding from affecting height and width */
         box-sizing: border-box;
     }
     .cs-topper {
@@ -175,7 +167,6 @@
         left: 0;
         opacity: 0;
     }
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
     /* roboto-regular - latin */
     @font-face {
@@ -271,16 +262,12 @@
 
         .cs-moon {
             z-index: 2;
-            // Transition properties
             transition: transform 0.3s, opacity 0.3s;
-
-            // fill: yellow; --> uncomment to change the color of the moon if needed
         }
 
         .cs-sun {
             z-index: 1;
             opacity: 0;
-            // Transition property
             transform: translate(-50%, 100%);
             transition: transform 0.3s, opacity 0.3s;
         }
@@ -319,10 +306,8 @@
         position: fixed;
         background-color: #fff;
         width: 100%;
-        /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -342,16 +327,13 @@
             height: 100%;
             max-width: calc(146 / 16 * 1rem);
             width: 40%;
-            /* prevents padding from affecting height and width */
             box-sizing: border-box;
             padding: 0;
 
             img {
                 height: 100%;
                 width: 100%;
-                /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
-                /* places the image to the left edge of the parent */
                 object-position: left;
             }
         }
@@ -365,7 +347,6 @@
             margin: 0 0 0 auto;
             background-color: transparent;
             height: clamp(2.75rem, 6vw, 3rem);
-            /* 44px - 48px */
             width: clamp(2.75rem, 6vw, 3rem);
         }
 
@@ -389,9 +370,7 @@
 
         .cs-box {
             position: relative;
-            /* 14px - 16px */
             height: clamp(0.875rem, 1.5vw, 1rem);
-            /* 24px - 28px */
             width: clamp(1.5rem, 2vw, 1.75rem);
         }
 
@@ -457,14 +436,12 @@
             min-width: 40%;
             width: auto;
             overflow: scroll;
-            /* 28px - 40px */
             padding: calc(48 / 16 * 1rem) clamp(1.75rem, 3vw, 2.5rem) calc(32 / 16 * 1rem) calc(70 / 16 * 1rem);
             gap: calc(20 / 16 * 1rem);
         }
 
         .cs-li {
             opacity: 0;
-            /* transition from these values */
             transform: translateX(calc(-40 / 16 * 1rem));
             margin-right: 0;
             width: 100%;
@@ -506,7 +483,6 @@
             display: inline-block;
             margin: 0;
             text-decoration: none;
-            /* 16px - 24px */
             font-size: clamp(1rem, 2.5vw, 1.5rem);
             line-height: 1.2em;
             color: var(--headerColor);
@@ -515,7 +491,6 @@
                 position: absolute;
                 bottom: calc(-2 / 16 * 1rem);
                 left: 0;
-                /* active state underline */
                 content: "";
                 opacity: 1;
                 display: none;
@@ -540,7 +515,6 @@
             position: absolute;
             top: 100%;
             right: 0;
-            /* black blurred overlay */
             content: "";
             opacity: 0;
             display: block;
@@ -579,7 +553,6 @@
             background-color: var(--dark);
 
             .cs-logo {
-                /* makes it white */
                 filter: grayscale(1) brightness(1000%);
             }
 
@@ -675,7 +648,6 @@
 
         .cs-li-link {
             &.cs-drop-link {
-                /* 14px - 16px */
                 font-size: clamp(0.875rem, 2vw, 1.25rem);
                 color: #fff;
             }
@@ -722,8 +694,6 @@
 
         .cs-drop-ul {
             z-index: -100;
-            /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-            // columns: 2;
             position: absolute;
             top: 100%;
             visibility: hidden;
@@ -797,7 +767,6 @@
             &.cs-drop-link {
                 display: block;
                 width: 100%;
-                /* prevents padding from affecting height and width */
                 box-sizing: border-box;
                 padding: calc(12 / 16 * 1rem);
                 white-space: nowrap;
@@ -841,7 +810,6 @@
             }
 
             .cs-drop-icon {
-                /* turns it white */
                 filter: grayscale(1) brightness(1000%);
             }
         }
@@ -859,10 +827,8 @@
         position: fixed;
         background-color: #fff;
         width: 100%;
-        /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -885,7 +851,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* margin-right auto pushes everything away from it to the right */
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
             max-width: calc(350 / 16 * 1rem);
@@ -895,7 +860,6 @@
             img {
                 height: 100%;
                 width: 100%;
-                /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
         }
@@ -907,14 +871,12 @@
             margin: 0;
             width: 100%;
             padding: 0;
-            /* 20px - 36px */
             gap: clamp(1.25rem, 2.6vw, 2.25rem);
         }
 
         .cs-li {
             padding: calc(32 / 16 * 1rem) 0;
             list-style: none;
-            /* prevent flexbox from squishing it */
             flex: none;
         }
 
@@ -923,7 +885,6 @@
             display: block;
             margin: 0;
             text-decoration: none;
-            /* 14px - 16px */
             font-size: clamp(0.875rem, 1vw, 1rem);
             line-height: 1.5em;
             color: var(--bodyTextColor);
@@ -937,7 +898,6 @@
                 position: absolute;
                 bottom: calc(0 / 16 * 1rem);
                 left: 0;
-                /* active state underline */
                 content: "";
                 opacity: 1;
                 display: block;
@@ -967,7 +927,6 @@
             background-color: var(--dark);
 
             .cs-logo {
-                /* makes it turn white */
                 filter: grayscale(1) brightness(1000%);
             }
 
@@ -1086,7 +1045,6 @@
 @media only screen and (min-width: 0rem) {
     #pricing-1384 {
         padding: var(--sectionPadding);
-        /* clips the cs-floater and prevents it from causing overflow issues */
         overflow: hidden;
         background-color: #f7f7f7;
         position: relative;
@@ -1094,7 +1052,6 @@
 
         .cs-container {
             width: 100%;
-            /* changes to 1280px at tablet */
             max-width: calc(584 / 16 * 1rem);
             margin: auto;
             display: flex;

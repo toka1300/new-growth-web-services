@@ -10,10 +10,20 @@
             </div>
         </div>
     </div>
+
     <picture class="cs-background">
-        <source srcset="{% getUrl '/assets/images/rainforest-m.jpg' | resize({ width: 1000, height: 667 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/rainforest.jpg' | resize({ width: 1500, height: 1000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/rainforest.jpg' | resize({ width: 2000, height: 1667 }) | webp %}" loading="lazy" alt="Rainforest">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 1200, height: 772 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 1200, height: 772 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 1200, height: 772 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 867 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 867 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 867 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 694 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 694 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 694 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/rainforest.jpg" | resize({ width: 2000, height: 694 }) | jpeg %}" alt="Rainforest" width="2000" height="694" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
-    
 </section>

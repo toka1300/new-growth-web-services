@@ -28,7 +28,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.58;
+    opacity: 0.48;
     position: absolute;
     display: block;
     top: 0;
@@ -74,7 +74,7 @@
   }
   #hero-1426 .cs-title {
     /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-size: clamp(2.2375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
     line-height: 1.2em;
     max-width: 51.8125rem;
@@ -123,7 +123,7 @@
   #services-943 .cs-container {
     width: 100%;
     /* changes to 1440px at tablet */
-    max-width: 34.375rem;
+    max-width: 29rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -216,7 +216,7 @@
   }
   #services-943 .cs-link {
     position: absolute;
-    bottom: 1rem;
+    bottom: 1.5rem;
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.2em;

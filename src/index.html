@@ -16,7 +16,7 @@ eleventyNavigation:
 <noscript>
     <link rel="stylesheet" href="/assets/css/local.css">
 </noscript>
-<link rel="preload" as="image" href="{% getUrl '/assets/images/landing-m-4.jpg' | resize({ width: 1500, height: 1000 }) | avif %}"/>
+<link rel="preload" as="image" href="{% getUrl '/assets/images/landing-m.jpg' | resize({ width: 1500, height: 1000 }) | avif %}"/>
 
     <script type="application/ld+json">
         {
@@ -72,9 +72,15 @@ eleventyNavigation:
     </div>
 
     <picture class="cs-background">
-        <source srcset="{% getUrl '/assets/images/landing-m-4.jpg' | resize({ width: 1500, height: 1000 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/landing.jpg' | resize({ width: 2500, height: 1660 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/landing-m-4.jpg' | resize({ width: 1500, height: 1000 }) | webp %}" alt="Aerial view of forest">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing-m.jpg" | resize({ width: 1200, height: 1324 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing-m.jpg" | resize({ width: 1200, height: 1324 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing-m.jpg" | resize({ width: 1200, height: 1324 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2500, height: 1660 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2500, height: 1660 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2500, height: 1660 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/landing-m.jpg" | resize({ width: 1200, height: 1324 }) | jpeg %}" alt="Aeriel view of the forest" width="600" height="662" decoding="async" aria-hidden="true">
     </picture>
 </section>
 
@@ -104,10 +110,17 @@ eleventyNavigation:
                     </p>
                 </div>
                 <a href="/about" class="cs-link">Learn More About Us</a>
+
                 <picture class="cs-background">
-                    <source srcset="{% getUrl '/assets/images/design.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                    <source srcset="{% getUrl '/assets/images/design.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                    <img src="{% getUrl '/assets/images/design.jpg' | resize({ width: 800, height: 550 }) | webp %}" alt="Pen and paper designing website" loading="lazy">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 464, height: 259 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 464, height: 259 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 464, height: 259 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 345, height: 328 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 345, height: 328 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/design.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/design.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" alt="Pen and paper designing website" width="464" height="259" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -121,10 +134,17 @@ eleventyNavigation:
                     </p>
                 </div>
                 <a href="/about" class="cs-link">Learn More About Us</a>
+
                 <picture class="cs-background">
-                    <source srcset="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                    <source srcset="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                    <img src="{% getUrl '/assets/images/hand-coded.jpg' | resize({ width: 800, height: 550 }) | webp %}" alt="Code on a computer" loading="lazy">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 464, height: 259 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 464, height: 259 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 464, height: 259 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 345, height: 328 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 345, height: 328 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/hand-coded.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" alt="Code on a computer" width="464" height="259" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -138,10 +158,17 @@ eleventyNavigation:
                     </p>
                 </div>
                 <a href="/about" class="cs-link">Learn More About Us</a>
+
                 <picture class="cs-background">
-                    <source srcset="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                    <source srcset="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                    <img src="{% getUrl '/assets/images/google-maps.jpg' | resize({ width: 800, height: 550 }) | webp %}" alt="Person using Google Maps on phone" loading="lazy">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 464, height: 259 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 464, height: 259 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 464, height: 259 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 345, height: 328 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 345, height: 328 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/google-maps.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" alt="Person using Google Maps on phone" width="464" height="259" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
             <li class="cs-item">
@@ -155,18 +182,31 @@ eleventyNavigation:
                     </p>
                 </div>
                 <a href="/about" class="cs-link">Learn More About Us</a>
+
                 <picture class="cs-background">
-                    <source srcset="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 800, height: 550 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                    <source srcset="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 1200, height: 800 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                    <img src="{% getUrl '/assets/images/search-results.jpg' | resize({ width: 800, height: 550 }) | webp %}" alt="Google search results" loading="lazy">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 464, height: 259 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 464, height: 259 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 464, height: 259 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 345, height: 328 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 345, height: 328 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/search-results.jpg" | resize({ width: 345, height: 328 }) | jpeg %}" alt="Google search results" width="464" height="259" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
         </ul>
     </div>
     <picture class="cs-waves">
-        <source media="(max-width: 600px)" srcset="./assets/svgs/waves-m.svg">
-        <source media="(min-width: 601px)" srcset="./assets/svgs/waves.svg">
-        <img loading="lazy" decoding="async" src="./assets/svgs/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 1200, height: 444 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 1200, height: 444 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 1200, height: 444 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 2000, height: 444 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 2000, height: 444 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 2000, height: 444 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/svgs/waves.svg" | resize({ width: 2000, height: 444 }) | jpeg %}" alt="waves graphic" width="2000" height="444" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
 </section>
 
@@ -177,13 +217,29 @@ eleventyNavigation:
 <section id="sbs-1125">
     <div class="cs-container">
         <div class="cs-image-group">
+
             <picture class="cs-picture cs-picture-1">
-                <source srcset="{% getUrl '/assets/images/me.jpg' | resize({ width: 1400, height: 1400 }) | avif %}" type="image/avif">
-                <img src="{% getUrl '/assets/images/me.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Picture of casey, the owner/lead developer of New Growth">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 840, height: 864 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 840, height: 864 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 840, height: 864 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 1314, height: 1352 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 1314, height: 1352 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 1314, height: 1352 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/me-wide.jpg" | resize({ width: 1314, height: 1352 }) | jpeg %}" alt="Picture of casey, the owner/lead developer of New Growth" width="657" height="676" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
+
             <picture class="cs-graphic">
-                <source srcset="{% getUrl '/assets/images/nature-drawing.png' | resize({ width: 661, height: 681 }) | avif %}" type="image/avif">
-                <img src="{% getUrl '/assets/images/nature-drawing.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Colorful graphic with plants">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 840, height: 864 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 840, height: 864 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 840, height: 864 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 1314, height: 1352 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 1314, height: 1352 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 1314, height: 1352 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/nature-drawing.png" | resize({ width: 1314, height: 1352 }) | jpeg %}" alt="Colourful graphic with plants" width="657" height="676" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
         </div>
         <div class="cs-content">
@@ -242,9 +298,15 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="https://green-foods.netlify.app/" class="cs-link"  target="_blank">
                     <picture class="cs-picture">
-                        <source srcset="{% getUrl '/assets/images/organic-website.png' | resize({ width: 1000, height: 571 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                        <source srcset="{% getUrl '/assets/images/organic-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                        <img src="{% getUrl '/assets/images/organic-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Screenshot of organic website">
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 1000, height: 570 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 1000, height: 570 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 1000, height: 570 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 826, height: 474 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 826, height: 474 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/organic-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" alt="Screnshot of organic website" width="413" height="237" loading="lazy" decoding="async" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">Organic Store</h3>
                     <p class="cs-item-text">
@@ -255,11 +317,16 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="https://fitzroy-cabinets.netlify.app/" class="cs-link" target="_blank">
                     <picture class="cs-picture">
-                        <source srcset="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-                        <source srcset="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 820, height: 472 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                        <img src="{% getUrl '/assets/images/cabinet-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Screenshot of cabinet website">
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 1000, height: 570 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 1000, height: 570 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 1000, height: 570 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 826, height: 474 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 826, height: 474 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/cabinet-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" alt="Screenshot of cabinet website" width="413" height="237" loading="lazy" decoding="async" aria-hidden="true">
                     </picture>
-
                     <h3 class="cs-h3">Fitzroy Cabinet Maker</h3>
                     <p class="cs-item-text">
                         A mock website for a cabinet located in Fitzroy Harbour
@@ -269,8 +336,15 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="https://airpnp139.herokuapp.com/" class="cs-link"  target="_blank">
                     <picture class="cs-picture">
-                        <source srcset="{% getUrl '/assets/images/airpnp-website.png' | resize({ width: 820, height: 472 }) | avif %}" type="image/avif">
-                        <img src="{% getUrl '/assets/images/airpnp-website.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Screenshot of airpnp website">
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 1000, height: 570 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 1000, height: 570 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 1000, height: 570 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 826, height: 474 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 826, height: 474 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/airpnp-website.png" | resize({ width: 826, height: 474 }) | jpeg %}" alt="Screenshot of airpnp website" width="413" height="237" loading="lazy" decoding="async" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">airpnp</h3>
                     <p class="cs-item-text">

@@ -1337,6 +1337,7 @@
 
             .cs-item {
                 background-color: var(--medium);
+                max-width: 20rem;
 
                 &.cs-popular {
                     border: solid var(--primaryLight);

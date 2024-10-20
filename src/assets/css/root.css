@@ -1132,6 +1132,7 @@
   }
   body.dark-mode #pricing-1384 .cs-item {
     background-color: var(--medium);
+    max-width: 20rem;
   }
   body.dark-mode #pricing-1384 .cs-item.cs-popular {
     border: solid var(--primaryLight);

@@ -21,10 +21,17 @@ eleventyNavigation:
 
 <section id="int-hero">
     <h1 id="home-h">About</h1>
+
     <picture class="cs-background">
-        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 750, height: 400 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-        <source srcset="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 2000, height: 600 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/tree-sky.jpg' | resize({ width: 1200, height: 400 }) | webp %}" alt="Looking up at the canopy in a forest">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 1200, height: 400 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 1200, height: 400 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 1200, height: 400 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 2000, height: 910 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 2000, height: 910 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 2000, height: 910 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/tree-sky.jpg" | resize({ width: 2000, height: 910 }) | jpeg %}" alt="View of tree canopy from below" width="600" height="200" decoding="async" aria-hidden="true">
     </picture>
 </section>
 
@@ -34,10 +41,17 @@ eleventyNavigation:
 
 <section id="sbs-1278">
     <div class="cs-container">
+
         <picture class="cs-picture">
-            <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1000, height: 1000 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-            <source srcset="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 1500, height: 1200 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/me-volcano.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Photo of Casey at volcano">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 960, height: 738 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 960, height: 738 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 960, height: 738 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 2000, height: 2000 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 2000, height: 2000 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 2000, height: 2000 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/me-volcano.jpg" | resize({ width: 2000, height: 2000 }) | jpeg %}" alt="Photo of Casey at volcano" width="480" height="369" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
             <div class="cs-flex">
@@ -73,10 +87,17 @@ eleventyNavigation:
 
 <section id="RTsbsr-71">
     <div class="cs-container">
+
         <picture class="cs-picture">
-            <source srcset="{% getUrl '/assets/images/pagespeed-m.png' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-            <source srcset="{% getUrl '/assets/images/pagespeed.png' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/pagespeed.png' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Screenshot of page speed results">
+           <!--Mobile Image-->
+           <source media="(max-width: 1200px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1044, height: 1122, position: "bottom" }) | avif %}" type="image/avif">
+           <source media="(max-width: 1200px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1044, height: 1122 }) | webp %}" type="image/webp">
+           <source media="(max-width: 1200px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1044, height: 1122 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 1201px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1004, height: 1040 }) | avif %}" type="image/avif">
+           <source media="(min-width: 1201px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1004, height: 1040 }) | webp %}" type="image/webp">
+           <source media="(min-width: 1201px)" srcset="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1004, height: 1040 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/pagespeed.png" | resize({ width: 1004, height: 1040 }) | jpeg %}" alt="Screenshot of page speed results" width="522" height="561" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Faster Load Times</span>
@@ -104,10 +125,17 @@ eleventyNavigation:
 
 <section id="RTsbs-71">
     <div class="cs-container">
+
         <picture class="cs-picture">
-            <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-            <source srcset="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/tree-on-lake.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Single tree on water with its reflection">
+           <!--Mobile Image-->
+           <source media="(max-width: 768)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1044, height: 1122 }) | avif %}" type="image/avif">
+           <source media="(max-width: 768)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1044, height: 1122 }) | webp %}" type="image/webp">
+           <source media="(max-width: 768)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1044, height: 1122 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 769)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1004, height: 1040 }) | avif %}" type="image/avif">
+           <source media="(min-width: 769)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1004, height: 1040 }) | webp %}" type="image/webp">
+           <source media="(min-width: 769)" srcset="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1004, height: 1040 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/tree-on-lake.jpg" | resize({ width: 1004, height: 1040 }) | jpeg %}" alt="Tree on a lake" width="522" height="561" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Security</span>
@@ -121,7 +149,7 @@ eleventyNavigation:
                     On the other hand, WordPress sites often require plugins for additional functionality. These plugins can introduce security risks, especially if they are outdated or poorly maintained, making WordPress sites more vulnerable to hacking. With a simple HTML/CSS site, you avoid these risks, giving you a safer, faster website with less maintenance.
                 </p>
             </p>
-            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+            <a class="cs-button-solid" aria-label="Get in touch to learn more" href="">Let's Chat</a>
         </div>
     </div>
 </section>
@@ -132,16 +160,23 @@ eleventyNavigation:
 
 <section id="RTsbsr-71">
     <div class="cs-container">
+
         <picture class="cs-picture">
-            <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1120, height: 1040 }) | avif %}" media="(max-width: 600px)" type="image/avif">
-            <source srcset="{% getUrl '/assets/images/compass.jpg' | resize({ width: 1004, height: 1040 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/compass.jpg' | resize({ width: 2000, height: 2000 }) | webp %}" loading="lazy" alt="Hand holding a compass">
+           <!--Mobile Image-->
+           <source media="(max-width: 768px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1044, height: 1122, position: "left" }) | avif %}" type="image/avif">
+           <source media="(max-width: 768px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1044, height: 1122, position: "left" }) | webp %}" type="image/webp">
+           <source media="(max-width: 768px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1044, height: 1122, position: "left" }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 769px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1004, height: 1040, position: "left" }) | avif %}" type="image/avif">
+           <source media="(min-width: 769px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1004, height: 1040, position: "left" }) | webp %}" type="image/webp">
+           <source media="(min-width: 769px)" srcset="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1004, height: 1040, position: "left" }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/compass.jpg" | resize({ width: 1004, height: 1040 }) | jpeg %}" alt="Hand holding a compass" width="522" height="561" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Google Profile</span>
             <h2 class="cs-title">Improve Your Google Business Profile</h2>
             <p>
-                A Google Business Profile is often overlooked by small businesses, but it’s a crucial tool for being discovered online. When someone searches for your business or services related to what you offer, having a well-optimized profile ensures that your company shows up in local search results and Google Maps. This makes it easy for potential customers to find your contact information, read reviews, and get directions, giving you more visibility to people searching for services like yours. <br> <br>
+                A Google Business Profile is often overlooked by small businesses, but it's a crucial tool for being discovered online. When someone searches for your business or services related to what you offer, having a well-optimized profile ensures that your company shows up in local search results and Google Maps. This makes it easy for potential customers to find your contact information, read reviews, and get directions, giving you more visibility to people searching for services like yours. <br> <br>
             </p>
             <p>
                 Beyond visibility, a complete and up-to-date Google Business Profile boosts credibility. Positive reviews and accurate business details build trust with potential customers, and since many people rely on Google to find businesses nearby, neglecting this tool could mean missing out on valuable local leads. At New Growth Web Services, we offer a free Google Business Profile revamp to help you make the most of this resource, ensuring your business stands out and is easy to find.

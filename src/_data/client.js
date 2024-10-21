@@ -2,7 +2,7 @@ module.exports = {
     "name": "New Growth Web Services",
     "email": "newgrowthweb@gmail.com",
     "phoneForTel": "613-857-9828",
-    "phoneFormatted": "(613) 857-9828",
+    "phoneFormatted": "1 (613) 857 9828",
     "address": {
         "lineOne": "Canada",
         "city": "Ottawa,",

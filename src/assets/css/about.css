@@ -1,5 +1,5 @@
 /*-- -------------------------- -->
-<---        Side By Side        -->
+<---        Side By Side - Hero -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -153,7 +153,7 @@
   }
 }
 /*-- -------------------------- -->
-<---        Header              -->
+<---        Separator           -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
   #header-1 {
@@ -217,6 +217,11 @@
   #RTsbst-71 .cs-text .ref-link {
     text-decoration: none;
   }
+  #RTsbs-71 .cs-text .icon,
+  #RTsbsr-71 .cs-text .icon,
+  #RTsbst-71 .cs-text .icon {
+    height: 1rem;
+  }
   #RTsbs-71 .cs-button-solid,
   #RTsbsr-71 .cs-button-solid,
   #RTsbst-71 .cs-button-solid {
@@ -228,7 +233,7 @@
   #RTsbsr-71 .cs-picture,
   #RTsbst-71 .cs-picture {
     width: 95%;
-    max-width: 34.375rem;
+    max-width: 23rem;
     margin: 0;
     position: relative;
     display: block;
@@ -287,7 +292,7 @@
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58rem) {
   #RTsbs-71 .cs-container,
   #RTsbsr-71 .cs-container,
   #RTsbst-71 .cs-container {
@@ -313,6 +318,14 @@
   #RTsbst-71 .cs-content {
     width: 45%;
     margin: 0;
+  }
+}
+/*Desktop*/
+@media screen and (min-width: 58rem) {
+  #RTsbs-71 .cs-picture,
+  #RTsbsr-71 .cs-picture,
+  #RTsbst-71 .cs-picture {
+    max-width: 34rem;
   }
 }
 /* Dark Mode */
@@ -343,7 +356,7 @@
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58rem) {
   #RTsbsr-71 .cs-container {
     justify-content: flex-end;
   }

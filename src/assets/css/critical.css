@@ -4,11 +4,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-1426 {
-    /* Centers button */
     text-align: center;
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
-    /* prevents the topper line from causing an overflow */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem clamp(12.5rem, 20.65vw, 18.75em) 1rem;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -34,7 +31,6 @@
     top: 0;
     left: 0;
     z-index: 1;
-    /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
   #hero-1426 .cs-background img {
@@ -185,6 +181,9 @@
   #services-943 .cs-item:hover .cs-background {
     opacity: 1;
   }
+  #services-943 .cs-item:hover .cs-link {
+    color: var(--primaryLight);
+  }
   #services-943 .cs-icon-wrapper {
     width: 5.5rem;
     height: 5.5rem;
@@ -214,7 +213,7 @@
     padding: 0;
     color: var(--bodyTextColor);
   }
-  #services-943 .cs-link {
+  #services-943 .cs-item .cs-link {
     position: absolute;
     bottom: 1.5rem;
     text-decoration: none;
@@ -226,10 +225,10 @@
     color: var(--primary);
     transition: color 0.3s;
   }
-  #services-943 .cs-link:hover {
+  #services-943 .cs-item .cs-link:hover {
     color: #fff;
   }
-  #services-943 .cs-link:before {
+  #services-943 .cs-item .cs-link:before {
     /* underline */
     content: "";
     width: 100%;

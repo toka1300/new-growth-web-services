@@ -958,9 +958,6 @@
   #pricing-1384 .cs-item.cs-popular .cs-duration {
     color: #fff;
   }
-  #pricing-1384 .cs-item.cs-popular .cs-duration {
-    opacity: 0.8;
-  }
   #pricing-1384 .cs-item.cs-popular .cs-button-transparent {
     background-color: var(--primary);
     color: #fff;
@@ -1381,9 +1378,9 @@
     text-align: center;
   }
   #footer .credit a {
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 1rem;
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   #footer .credit a:hover {
     text-decoration: underline;

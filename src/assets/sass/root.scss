@@ -1085,7 +1085,7 @@
             align-items: center;
             justify-content: center;
             /* 16px - 20px */
-            column-gap: clamp(1rem, 2.3vw, 1.25rem);
+            column-gap: clamp(2.3rem, 2.3vw, 1.25rem);
             /* 166px - 170px */
             row-gap: clamp(10.375rem, 20vw, 10.625rem);
         }
@@ -1094,6 +1094,7 @@
             text-align: center;
             list-style: none;
             width: 100%;
+            max-width: 20rem;
             margin: 0;
             padding: 0 1rem 1.5rem;
             /* prevents padding from affecting height and width */
@@ -1105,6 +1106,7 @@
             align-items: center;
 
             &.cs-popular {
+                border: solid var(--primary);
                 .cs-flex {
                     background-color: var(--primary);
                 }
@@ -1337,7 +1339,6 @@
 
             .cs-item {
                 background-color: var(--medium);
-                max-width: 20rem;
 
                 &.cs-popular {
                     border: solid var(--primaryLight);

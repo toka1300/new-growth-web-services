@@ -10,7 +10,6 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/pricing.css">
     <link rel="preload" as="image" href="{% getUrl '/assets/images/leaves.jpg' | resize({ width: 1200, height: 400 }) | avif %}"/>
 {% endblock %}
 

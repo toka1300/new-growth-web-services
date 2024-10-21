@@ -217,10 +217,11 @@
   #RTsbst-71 .cs-text .ref-link {
     text-decoration: none;
   }
-  #RTsbs-71 .cs-text .icon,
-  #RTsbsr-71 .cs-text .icon,
-  #RTsbst-71 .cs-text .icon {
-    height: 1rem;
+  #RTsbs-71 .cs-text a,
+  #RTsbsr-71 .cs-text a,
+  #RTsbst-71 .cs-text a {
+    color: inherit;
+    font-weight: bold;
   }
   #RTsbs-71 .cs-button-solid,
   #RTsbsr-71 .cs-button-solid,

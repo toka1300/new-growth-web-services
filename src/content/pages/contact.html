@@ -5,7 +5,6 @@ permalink: 'contact/'
 eleventyNavigation:
     key: Contact
     order: 1100
-    hideOnDesktop: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -44,7 +43,7 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Let's Chat</span>
-            <h2 class="cs-title">Schedule a Chat</h2>
+            <h2 class="cs-title">Send Me a Message</h2>
             <form class="cs-form" id="cs-form-1105" name="Contact Form" method="post" data-netlify="true">
                 <label class="cs-label">
                     Name
@@ -62,7 +61,7 @@ eleventyNavigation:
                     Message
                     <textarea class="cs-input cs-textarea" required name="Message" id="message-1105" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                <button class="cs-button-transparent cs-submit" type="submit">Send Message</button>
             </form>
         </div>
         <ul class="cs-ul">
@@ -88,13 +87,14 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <picture class="cs-icon-wrapper">
-                    <img aria-hidden="true" src="../../assets/svgs/pin-contact.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async" loading="lazy">
+                    <img aria-hidden="true" src="../../assets/svgs/world.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async" loading="lazy">
                 </picture>
                 <div class="cs-flex-group">
                     <span class="cs-header">Areas Served</span>
                     <a href="" class="cs-link">Woldwide</a>
                 </div>
             </li>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/newgrowthweb/30min'});return false;" class="cs-button-solid">Schedule a Call Now</a>
         </ul>
     </div>
 </section>

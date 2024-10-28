@@ -80,6 +80,7 @@
     font-family: inherit;
   }
   #contact-1105 .cs-button-solid {
+    align-self: center;
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     border: none;
     min-width: 9.375rem;
@@ -88,6 +89,7 @@
   #contact-1105 .cs-submit {
     min-width: 17.6875rem;
     border-radius: 0;
+    background-color: #fff;
   }
   #contact-1105 .cs-submit:hover {
     cursor: pointer;
@@ -246,6 +248,9 @@
   }
   body.dark-mode #contact-1105 .cs-ul:before {
     opacity: 0.3;
+  }
+  body.dark-mode #contact-1105 .cs-submit {
+    background-color: var(--dark);
   }
 }
 

@@ -88,6 +88,7 @@
         }
 
         .cs-button-solid {
+            align-self: center;
             line-height: clamp(2.875em, 5.5vw, 3.5em);
             border: none;
             min-width: calc(150 / 16 * 1rem);
@@ -97,6 +98,7 @@
         .cs-submit {
             min-width: calc(283 / 16 * 1rem);
             border-radius: 0;
+            background-color: #fff;
             &:hover {
                 cursor: pointer;
             }
@@ -282,6 +284,10 @@
                 &:before {
                     opacity: 0.3;
                 }
+            }
+
+            .cs-submit {
+                background-color: var(--dark);
             }
         }
     }

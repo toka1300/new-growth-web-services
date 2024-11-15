@@ -295,6 +295,20 @@ eleventyNavigation:
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
+                <a href="https://jason-bramburger.netlify.app/" class="cs-link" target="_blank">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/jason-website.png" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source srcset="{% getUrl "/assets/images/jason-website.png" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source srcset="{% getUrl "/assets/images/jason-website.png" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/jason-website.png" | resize({ width: 1000, height: 480 }) | jpeg %}" alt="Screenshot of cabinet website" width="413" height="237" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Academic Website</h3>
+                    <p class="cs-item-text">
+                        An academic website for an Assistant Professor of Mathematics and Statistics.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
                 <a href="https://green-foods.netlify.app/" class="cs-link"  target="_blank">
                     <picture class="cs-picture">
                        <source srcset="{% getUrl "/assets/images/organic-website.png" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">

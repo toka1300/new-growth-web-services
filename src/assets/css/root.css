@@ -806,7 +806,7 @@
     width: 100%;
   }
   #cs-navigation .cs-nav-button {
-    border-radius: 0;
+    border-radius: 0.5rem;
   }
 }
 /* Dark Mode */

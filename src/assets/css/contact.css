@@ -45,6 +45,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
+    border-radius: 0.5rem;
   }
   #contact-1105 .cs-label {
     /* 14px - 16px */
@@ -115,6 +116,7 @@
   #contact-1105 .cs-ul:before {
     /* stripes graphic */
     content: "";
+    border-radius: 0.5rem;
     height: 100%;
     width: 100%;
     background: url("../images/grey-lines.jpg");
@@ -215,6 +217,7 @@
     order: 2;
   }
   #contact-1105 .cs-ul {
+    border-radius: 0.5rem;
     max-width: 32.0625rem;
   }
 }

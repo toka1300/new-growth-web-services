@@ -73,7 +73,7 @@
         font-size: calc(16 / 16 * 1rem);
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
-        border-radius: calc(8 / 16 * 1rem);
+        border-radius: 0.5rem;
 
         transition: 0.3s;
         text-align: center;
@@ -954,7 +954,7 @@
         }
 
         .cs-nav-button {
-            border-radius: 0;
+            border-radius: 0.5rem;
         }
     }
 }

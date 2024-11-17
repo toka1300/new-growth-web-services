@@ -49,6 +49,7 @@
             flex-wrap: wrap;
             align-items: center;
             gap: calc(12 / 16 * 1rem);
+            border-radius: 0.5rem;
         }
 
         .cs-label {
@@ -125,6 +126,7 @@
             &:before {
                 /* stripes graphic */
                 content: "";
+                border-radius: 0.5rem;
                 height: 100%;
                 width: 100%;
                 background: url("../images/grey-lines.jpg");
@@ -242,6 +244,7 @@
         }
 
         .cs-ul {
+            border-radius: 0.5rem;
             max-width: calc(513 / 16 * 1rem);
         }
     }

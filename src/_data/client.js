@@ -5,7 +5,7 @@ module.exports = {
     "phoneFormatted": "1 (613) 857 9828",
     "address": {
         "lineOne": "Canada",
-        "city": "Ottawa,",
+        "city": "Ottawa",
         "province": "ON",
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/osHCPqm9ZzCPVJmT7"

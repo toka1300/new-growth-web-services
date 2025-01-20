@@ -6,25 +6,25 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://newgrowthweb.ca/</loc>
+    <loc>https://newgrowthweb.ca</loc>
     <lastmod>2024-10-21T17:28:12+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://newgrowthweb.ca/about/</loc>
+    <loc>https://newgrowthweb.ca/about</loc>
     <lastmod>2024-10-21T17:28:12+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://newgrowthweb.ca/pricing/</loc>
+    <loc>https://newgrowthweb.ca/pricing</loc>
     <lastmod>2024-10-21T17:28:12+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   
   <url>
-    <loc>https://newgrowthweb.ca/contact/</loc>
+    <loc>https://newgrowthweb.ca/contact</loc>
     <lastmod>2024-10-21T17:28:12+00:00</lastmod>
     <priority>0.80</priority>
   </url>
